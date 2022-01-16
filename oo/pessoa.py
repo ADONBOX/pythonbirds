@@ -15,7 +15,10 @@ if __name__ == '__main__':
     print(natercia.cumprimentar())
     print(natercia.nome)
     print(natercia.idade)
-
     for filho in natercia.filhos:
         print(filho.nome)
-
+    natercia.sobrenome = 'Ramos'
+    print(natercia.sobrenome)
+    del natercia.filhos
+    print(natercia.__dict__)
+    print(elisa.__dict__)
